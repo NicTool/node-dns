@@ -46,7 +46,7 @@ jobs:
       - run: npm ci || npm install
       - run: npm test
 
-  create-release:
+  release:
     needs: [build, version]
     runs-on: ubuntu-latest
     permissions:
@@ -77,3 +77,4 @@ jobs:
           tag_name: v${{ needs.version.outputs.version }}
           name: ${{ needs.version.outputs.version }}
           generate_release_notes: false
+
