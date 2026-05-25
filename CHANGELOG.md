@@ -4,9 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
-### 2.2.0 - 2026-05-25
+### 2.2.1 - 2026-05-25
 
 - fix(packet): preserve RDLENGTH+RDATA for unknown RR types
+- fix(packet): use crypto.randomInt for Packet.uuid (RFC 5452)
+
+### 2.2.0 - 2026-05-25
+
 - feat(client): add retryOverTCP option #117
 - feat(client): support `dns` argument, fix docs #116
 - feat: add resolveSOA #115
